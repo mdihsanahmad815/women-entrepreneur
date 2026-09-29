@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>Women Entrepreneur</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="#home">
+      <img src="assets/logo.jpg" alt="Women Entrepreneur logo">
+      <div><strong>WOMEN ENTREPRENEUR</strong><small>LEARN • BUILD • GROW</small></div>
+    </a>
+    <div class="nav-actions">
+      <button id="langBtn" class="pill">বাংলা / EN</button>
+      <button id="menuBtn" class="icon-btn">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">WOMEN • BUSINESS • DIGITAL SKILLS</span>
+        <h1>Build your <em>skills.</em><br>Grow your <em>business.</em></h1>
+        <p>নারীদের জন্য একটি modern learning & earning platform — নিজের কাজ, skill এবং professional profile এক জায়গায় গড়ে তুলুন।</p>
+        <div class="hero-buttons">
+          <button class="primary" data-open="register">Create Account →</button>
+          <button class="secondary" data-open="login">Login →</button>
+        </div>
+        <div class="trust">✓ Personal Profile &nbsp;&nbsp; ✓ Referral Code &nbsp;&nbsp; ✓ Work Skills</div>
+      </div>
+      <div class="hero-logo-card">
+        <div class="card-top"><span>WOMEN ENTREPRENEUR</span><span>• LIVE</span></div>
+        <img src="assets/logo.jpg" alt="Women Entrepreneur">
+        <div class="hero-mini">
+          <div><b>01</b><small>Profile</small></div>
+          <div><b>09</b><small>Work Skills</small></div>
+          <div><b>∞</b><small>Growth</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="feature-area">
+      <div class="section-title"><span>✦</span><h2>আপনার শেখা ও আয়ের পথ</h2><span>✦</span></div>
+      <div class="features">
+        <article class="feature"><div class="feature-icon">📖</div><h3>প্রিমিয়াম কোর্স ও ক্লাস</h3><p>অনলাইনে প্রয়োজনীয় skill শিখুন এবং নিজের কাজের জন্য প্রস্তুত হন।</p></article>
+        <article class="feature"><div class="feature-icon pink">✦</div><h3>ভেরিফাইড সার্টিফিকেট</h3><p>কোর্স সম্পন্ন করার পর নিজের profile-এ certificate information রাখুন।</p></article>
+        <article class="feature"><div class="feature-icon cyan">▣</div><h3>নিশ্চিত আয়ের সুযোগ</h3><p>নিজের skill দিয়ে কাজ, service ও business opportunity খুঁজে নিন।</p></article>
+      </div>
+
+      <div class="stats-small">
+        <div><span>👥</span><b>১০,০০০+ জন</b><small>সফল শিক্ষার্থী</small></div>
+        <div><span>▶</span><b>১০০+ মাস্টারক্লাস</b><small>ভিডিও লেসন</small></div>
+        <div><span>♟</span><b>২৪/৭ সাপোর্ট</b><small>দক্ষ ট্রেনার ও মেন্টর</small></div>
+        <div><span>✹</span><b>৮,৫০০+ গ্র্যাজুয়েট</b><small>সার্টিফিকেট প্রাপ্ত</small></div>
+      </div>
+    </section>
+
+    <section class="work-section">
+      <div class="section-title"><span>✦</span><h2>আমাদের কাজের ক্যাটাগরি</h2><span>✦</span></div>
+      <p class="section-sub">Login করার আগেই কাজগুলো দেখা যাবে। একাধিক category নির্বাচন করা যাবে।</p>
+      <div id="categories" class="category-grid"></div>
+    </section>
+
+    <section class="more-stats">
+      <div><b>৯৯%</b><span>বিশ্বস্ত ডেলিভারি</span></div>
+      <div><b>১০০%</b><span>প্রোফাইল সিকিউরিটি</span></div>
+      <div><b>৯০+</b><span>অভিজ্ঞ মেন্টর</span></div>
+      <div><b>২৪/৭</b><span>কমিউনিটি সাপোর্ট</span></div>
+      <div><b>১০০+</b><span>ভিডিও লেসন</span></div>
+      <div><b>৯</b><span>Work Categories</span></div>
+    </section>
+
+    <section id="profile" class="profile-section hidden">
+      <div class="profile-head"><div><span class="eyebrow">PERSONAL PROFILE</span><h2 id="profileTitle">My Profile</h2></div><button id="logoutBtn" class="danger">Logout</button></div>
+      <div class="profile-card">
+        <div class="profile-photo-wrap">
+          <img id="profilePhoto" src="assets/logo.jpg" alt="Profile photo">
+          <label class="upload">Upload Photo<input id="photoInput" type="file" accept="image/*"></label>
+          <button id="downloadJpg" class="secondary full">Download JPG</button>
+        </div>
+        <div class="profile-info">
+          <div class="info-grid">
+            <label>User ID<input id="pUserId" readonly></label>
+            <label>Name<input id="pName" readonly></label>
+            <label>Gmail<input id="pEmail" readonly></label>
+            <label>Phone<input id="pPhone" readonly></label>
+            <label>Referral Code<input id="pReferral" readonly></label>
+            <label>Joined Date<input id="pJoined" readonly></label>
+          </div>
+          <div class="profile-actions"><button id="editBtn" class="primary">Edit Profile</button><button id="saveBtn" class="primary hidden">Save Changes</button></div>
+          <h3>My Work / Skill Categories</h3>
+          <div id="profileCategories" class="selected-skills"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-box">
+      <button id="closeModal" class="close">×</button>
+      <div id="loginForm">
+        <span class="eyebrow">WELCOME BACK</span><h2>Login</h2>
+        <input id="loginEmail" placeholder="Gmail">
+        <input id="loginPass" type="password" placeholder="Password">
+        <button id="loginSubmit" class="primary full">Login →</button>
+        <p>Account নেই? <button class="text-btn" data-switch="register">Sign up</button></p>
+      </div>
+      <div id="registerForm" class="hidden">
+        <span class="eyebrow">CREATE ACCOUNT</span><h2>Sign Up</h2>
+        <input id="regName" placeholder="Name">
+        <input id="regEmail" type="email" placeholder="Gmail">
+        <input id="regPhone" placeholder="Phone">
+        <input id="regPass" type="password" placeholder="Password">
+        <button id="registerSubmit" class="primary full">Create Account →</button>
+        <p>আগে account আছে? <button class="text-btn" data-switch="login">Login</button></p>
+      </div>
+      <small id="message"></small>
+    </div>
+  </div>
+
+  <footer><span>© 2026 Women Entrepreneur. All Rights Reserved.</span><strong>Designed & Developed by <b>Freelancer Ihsan</b></strong></footer>
+  <script src="script.js"></script>
+</body>
+</html>
